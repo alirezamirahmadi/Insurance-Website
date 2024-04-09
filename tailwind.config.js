@@ -2,17 +2,19 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
     extend: {
-      colors:{
-        mainColor:{
-          main:'#0ea5e9'
+      colors: {
+        primary: {
+          default: '#0ea5e9',
+          text: '#696e77'
         },
-        secondColor:{
-          main:'#fafafa'
+        secondary: {
+          default: '#0f3567'
         },
-        textColor:{
-          main:'#082f49'
-        }
       }
     },
   },
