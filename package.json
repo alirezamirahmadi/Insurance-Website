@@ -6,6 +6,7 @@
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/tailwind-output.css --watch"
   },
   "dependencies": {
+    "jquery": "^3.7.1",
     "swiper": "^10.2.0"
   }
 }

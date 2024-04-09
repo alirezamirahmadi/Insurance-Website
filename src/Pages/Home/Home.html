@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +10,18 @@
   <link rel="stylesheet" href="./Home.css">
   <link rel="stylesheet" href="../../../dist/tailwind-output.css">
 </head>
+
 <body>
 
-  <!-- NavBar -->
-  <nav-bar image=../../../public/image/brand.png cssURL="../../../dist/tailwind-output.css"></nav-bar>
-  
-  <!-- Slider -->
-  <!-- <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
+  <div id="page-home">
+
+    <!-- NavBar -->
+    <!-- <nav-bar image=../../../public/image/brand.png cssURL="../../../dist/tailwind-output.css"></nav-bar> -->
+
+    <!-- Slider -->
+    <!-- <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
         <img src="../../../public/image/Home/Home-1.jpg" alt="">
       </div>
       <div class="swiper-slide">
@@ -26,24 +30,27 @@
     </div>
     <div class="swiper-pagination"></div>
   </div> -->
-  <div class="flex">
-    <div class="mt-56">
-      <h2 id="slogan" class="font-serif text-7xl text-secondary-default">Ask for the best insurance services only from us</h2>
+    <div class="lg:flex flex-wrap-reverse lg:flex-nowrap">
+      <div class="mt-56">
+        <h2 id="slogan" class="font-serif text-7xl text-secondary-default">Ask for the best insurance services only from us</h2>
+      </div>
+      <img src="../../../public/svg/Insurance-amico.svg" alt="Insurance-amico" width="40%" class="me-20 mt-20">
     </div>
-    <img src="../../../public/svg/Insurance-amico.svg" alt="Insurance-amico" width="40%" class="me-20 mt-20">
-  </div>
 
-  <!-- section of Services -->
-  <div class="mx-2" >
-    <section-title title="What we offer" description="For your business" cssURL="../../../dist/tailwind-output.css"></section-title>
-    <p class="text-primary-text text-xl md:w-96 lg:w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum necessitatibus, odit placeat eaque sapiente sequi!</p>
-  </div>
+    <!-- section of Services -->
+    <div class="mx-2">
+      <section-title title="What we offer" description="For your business"
+        cssURL="../../../dist/tailwind-output.css"></section-title>
+      <p class="text-primary-text text-xl md:w-96 lg:w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Rerum necessitatibus, odit placeat eaque sapiente sequi!</p>
+    </div>
 
+  </div>
 
 
 
   <script src="../../../node_modules/swiper/swiper-bundle.min.js"></script>
-  <script type="module" src="../../Component/Main/Header.js"></script>
+  <!-- <script type="module" src="../../Component/Main/NavBar/NavBar.js"></script> -->
   <script type="module" src="../../Component/Main/SectionTitle/SectionTitle.js"></script>
 
   <script>
@@ -55,4 +62,5 @@
     });
   </script>
 </body>
+
 </html>
