@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../../../node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./Home.css">
+  <link rel="stylesheet" href="../../../public/tailwind-output.css">
+</head>
+<body>
+
+  <!-- NavBar -->
+  <nav-bar image=../../../public/image/brand.png cssURL="../../../public/tailwind-output.css"></nav-bar>
+  
+  <!-- Slider -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../../../public/image/Home/Home-1.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="../../../public/image/Home/Home-2.jpg" alt="">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- section of Services -->
+  <div class="mx-2" >
+    <section-title title="What we offer" description="For your business" cssURL="../../../public/tailwind-output.css"></section-title>
+    <p class="text-textColor-main text-xl md:w-96 lg:w-96">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum necessitatibus, odit placeat eaque sapiente sequi!</p>
+  </div>
+
+
+
+
+  <script src="../../../node_modules/swiper/swiper-bundle.min.js"></script>
+  <script type="module" src="../../Component/Main/Header.js"></script>
+  <script type="module" src="../../Component/Main/SectionTitle/SectionTitle.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
+  </script>
+</body>
+</html>
