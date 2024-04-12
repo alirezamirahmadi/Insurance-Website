@@ -30,8 +30,8 @@
     </div>
     <div class="swiper-pagination"></div>
   </div> -->
-    <div class="container mx-auto lg:flex flex-wrap-reverse lg:flex-nowrap lg:justify-between text-center">
-      <div class="mt-20 me-10 lg:mt-56 ">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 justify-between text-center">
+      <div class="mt-20 lg:mt-56 ">
         <h2 class="font-serif text-6xl lg:text-7xl text-secondary-default">Central Insurance</h2>
         <h2 id="slogan" class="text-xl lg:text-2xl text-secondary-default">Ask for the best insurance services only from
           us</h2>
@@ -39,21 +39,39 @@
           class="text-white bg-primary-default hover:bg-secondary-default focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-8 py-2.5 mx-auto mt-8 block dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">List
           of services</button>
       </div>
-      <img src="../../../public/svg/Insurance-amico.svg" alt="Insurance-amico" class="mx-auto mt-20 w-2/5">
+      <img src="../../../public/svg/Insurance-amico.svg" alt="Insurance-amico" class="mx-auto mt-20">
     </div>
 
-    <!-- section of Services -->
+    <!-- list of Services -->
     <div class="container mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-center">
-        <section-title title="What we offer" description="For your business"
-          cssURL="../../../dist/tailwind-output.css"></section-title>
-        <span></span>
-        <p class="text-primary-text text-xl md:w-96 lg:w-96 mt-6">Lorem ipsum dolor sit amet consectetur adipisicing
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center">
+        <section-title title="What we offer" description="For your business" cssURL="../../../dist/tailwind-output.css"
+          class="col-span-2"></section-title>
+        <p class="text-primary-text text-xl md:w-96 lg:w-96 my-6 mx-4">Lorem ipsum dolor sit amet consectetur
+          adipisicing
           elit.
           Rerum necessitatibus, odit placeat eaque sapiente sequi!</p>
       </div>
 
-      <div id="service-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-between"></div>
+      <div id="service-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-4"></div>
+      <button type="button"
+        class="text-white bg-primary-default hover:bg-secondary-default focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-md px-6 py-2 mx-auto mt-5 block dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+        More Items</button>
+    </div>
+
+    <!-- About Company -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center mt-10">
+      <div class="">
+        <img src="../../../public/image/AboutUs/about-1.png" alt="About Us">
+      </div>
+      <div class="px-12">
+        <section-title title="About Company" description="We are a reliable and professional insurance company"
+          cssURL="../../../dist/tailwind-output.css" class="col-span-2"></section-title>
+        <div id="aboutcompanytabs"></div>    
+        <button type="button"
+          class="text-white bg-primary-default hover:bg-secondary-default focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-md px-6 py-2 mt-14 block dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+          About Company</button>
+      </div>
     </div>
 
 

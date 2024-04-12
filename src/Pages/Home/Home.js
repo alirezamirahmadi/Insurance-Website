@@ -1,6 +1,6 @@
 "use strict"
 
-import { ServiceListData } from '../../Utils/data.js';
+import { ServiceListData, AboutCompanyData } from '../../Utils/data.js';
 
 
 const loadServiceListData = () => {
@@ -16,10 +16,21 @@ const loadServiceListData = () => {
         `;
     })
   }
-  // console.log(serviceList);
+}
+
+const loadAboutCompanyData = () => {
+  const aboutCompany = document.getElementById('aboutcompanytabs');
+  if (aboutCompany) {
+    AboutCompanyData.map(about => {
+      aboutCompany.innerHTML +=
+        `
+          <about-company items="${about.items}" description="${about.description}" cssURL="../../../dist/tailwind-output.css"></about-company>
+      `
+    })
+  }
 }
 
 
 export {
-  loadServiceListData
+  loadServiceListData, loadAboutCompanyData
 }
