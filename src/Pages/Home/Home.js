@@ -1,6 +1,6 @@
 "use strict"
 
-import { ServiceListData, AboutCompanyData, PopularServiceData } from '../../Utils/data.js';
+import { ServiceListData, AboutCompanyData, PopularServiceData, AmazingCompanyData } from '../../Utils/data.js';
 
 
 const loadServiceListData = () => {
@@ -42,6 +42,55 @@ const loadPopularServiceData = () => {
   }
 }
 
+const loadAmazingCompanyData = () => {
+  const amazingCompany = document.getElementById('amazing-company');
+  const accordionItems = new Array(3);
+  let active = true;
+  if (amazingCompany) {
+    AmazingCompanyData.map((amazing, index) => {
+      amazingCompany.innerHTML +=
+        `
+          <accordion-item id-header="header${index}" id-body="body${index}" header="${amazing.header}" body="${amazing.body}" image="${amazing.image}" cssURL="./dist/tailwind-output.css"></accordion-item>
+        `;
+      accordionItems.push({
+        id: `#header${index}`,
+        triggerEl: document.querySelector(`#header${index}`),
+        targetEl: document.querySelector(`#body${index}`),
+        active
+      })
+      active = false;
+    })
+  }
+
+  // options with default values
+  const options = {
+    alwaysOpen: true,
+    activeClasses: 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white',
+    inactiveClasses: 'text-gray-500 dark:text-gray-400',
+    onOpen: (item) => {
+      console.log('accordion item has been shown');
+      console.log(item);
+    },
+    onClose: (item) => {
+      console.log('accordion item has been hidden');
+      console.log(item);
+    },
+    onToggle: (item) => {
+      console.log('accordion item has been toggled');
+      console.log(item);
+    },
+  };
+
+  // instance options object
+  const instanceOptions = {
+    id: 'amazing-company',
+    override: true
+  };
+
+  // const accordion = new Accordion(amazingCompany, accordionItems, options, instanceOptions);
+}
+
+
 export {
-  loadServiceListData, loadAboutCompanyData, loadPopularServiceData
+  loadServiceListData, loadAboutCompanyData, loadPopularServiceData, loadAmazingCompanyData
 }

@@ -20,7 +20,12 @@ const PopularServiceData = [
   {id:6, title:'Fire Insurance', image:'../../Public/svg/PopularService/fire.svg', description:'Lorem ipsum dolor sit amet consectetur adipisicing elit', href:'#'},
 ]
 
+const AmazingCompanyData = [
+  {id:1, header:'What are insurance services?', body:'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit'},
+  {id:2, header:'How many services do we offer?', body:'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit'},
+  {id:3, header:'How much experience does our team member have?', body:'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit'},
+]
 
 export {
-  ServiceListData, AboutCompanyData, PopularServiceData
+  ServiceListData, AboutCompanyData, PopularServiceData, AmazingCompanyData
 }
