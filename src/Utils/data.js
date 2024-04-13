@@ -11,8 +11,16 @@ const AboutCompanyData = [
   // {id:3, description:'Lorem ipsum dolor sit amet consecteturadipisicingelit.Rerum necessitatibus, odit placeat eaque sapiente sequi!', items:'Board of Directors, Important People, Important People, Board of Directors'},
 ]
 
+const PopularServiceData = [
+  {id:1, title:'Life Insurance', image:'../../Public/svg/PopularService/life.svg', description:'Lorem ipsum dolor sit amet consectetur adipisicing elit', href:'#'},
+  {id:2, title:'Home Insurance', image:'../../Public/svg/PopularService/home.svg', description:'Lorem ipsum dolor sit amet consectetur adipisicing elit', href:'#'},
+  {id:3, title:'Travel Insurance', image:'../../Public/svg/PopularService/travel.svg', description:'Lorem ipsum dolor sit amet consectetur adipisicing elit', href:'#'},
+  {id:4, title:'Car Insurance', image:'../../Public/svg/PopularService/car.svg', description:'Lorem ipsum dolor sit amet consectetur adipisicing elit', href:'#'},
+  {id:5, title:'Business Insurance', image:'../../Public/svg/PopularService/business.svg', description:'Lorem ipsum dolor sit amet consectetur adipisicing elit', href:'#'},
+  {id:6, title:'Fire Insurance', image:'../../Public/svg/PopularService/fire.svg', description:'Lorem ipsum dolor sit amet consectetur adipisicing elit', href:'#'},
+]
 
 
 export {
-  ServiceListData, AboutCompanyData
+  ServiceListData, AboutCompanyData, PopularServiceData
 }

@@ -1,6 +1,6 @@
 "use strict"
 
-import { ServiceListData, AboutCompanyData } from '../../Utils/data.js';
+import { ServiceListData, AboutCompanyData, PopularServiceData } from '../../Utils/data.js';
 
 
 const loadServiceListData = () => {
@@ -30,7 +30,18 @@ const loadAboutCompanyData = () => {
   }
 }
 
+const loadPopularServiceData = () => {
+  const popularService = document.getElementById('popular-service');
+  if (popularService) {
+    PopularServiceData.map(service => {
+      popularService.innerHTML +=
+        `
+          <popular-card title="${service.title}" description="${service.description}" image="${service.image}" cssURL="./dist/tailwind-output.css"></popular-card>
+        `;
+    })
+  }
+}
 
 export {
-  loadServiceListData, loadAboutCompanyData
+  loadServiceListData, loadAboutCompanyData, loadPopularServiceData
 }

@@ -16,6 +16,7 @@ module.exports = {
           text: '#696e77'
         },
         secondary: {
+          light: '#264f85',
           default: '#0f3567'
         },
       }
