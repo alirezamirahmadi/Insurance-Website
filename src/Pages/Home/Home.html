@@ -67,45 +67,92 @@
       <div class="px-12">
         <section-title title="About Company" description="We are a reliable and professional insurance company"
           cssURL="../../../dist/tailwind-output.css" class="col-span-2"></section-title>
-        <div id="aboutcompanytabs"></div>    
+        <div id="aboutcompanytabs"></div>
         <button type="button"
           class="text-white bg-primary-default hover:bg-secondary-default focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-md px-6 py-2 mt-14 block dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
           About Company</button>
       </div>
     </div>
-    
+
     <!-- Popular Service -->
     <div class="bg-secondary-light py-20 ">
       <div class="text-center mb-10">
         <p class="text-2xl text-white">Popular Service</p>
         <p class="text-5xl text-white mt-3">Amazing Insurance Service</p>
       </div>
-      <div id="popular-service" class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-6"></div>
+      <div id="popular-service"
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-6"></div>
     </div>
-    
+
     <!-- Amazing Company -->
     <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center mt-10">
       <div class="px-12">
         <section-title title="Amazing Company" description="Excellent insurance, your solution for business"
-        cssURL="../../../dist/tailwind-output.css" class="col-span-2"></section-title>
-        <p class="text-primary-text text-lg mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt facilis in accusantium blanditiis sit eius ducimus eveniet, maxime minus similique voluptate dolorum! Omnis repellat impedit est, facere blanditiis accusantium?</p>
-        <div id="amazing-company" data-accordion="collapse" data-active-class="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"></div>
+          cssURL="../../../dist/tailwind-output.css" class="col-span-2"></section-title>
+        <p class="text-primary-text text-lg mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          incidunt facilis in accusantium blanditiis sit eius ducimus eveniet, maxime minus similique voluptate dolorum!
+          Omnis repellat impedit est, facere blanditiis accusantium?</p>
+        <div id="amazing-company" data-accordion="collapse"
+          data-active-class="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white"></div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <img src="../../../public/image/AmazingCompany/amazing-company-1.jpg" alt="Amazing Company">
-        <img src="../../../public/image/AmazingCompany/amazing-company-2.jpg" alt="Amazing Company" class="row-span-2 self-center justify-self-center md:justify-self-start">
+        <img src="../../../public/image/AmazingCompany/amazing-company-2.jpg" alt="Amazing Company"
+          class="row-span-2 self-center justify-self-center md:justify-self-start">
         <img src="../../../public/image/AmazingCompany/amazing-company-3.jpg" alt="Amazing Company">
       </div>
     </div>
 
+    <!-- In Touch -->
+    <div class="grid grid-cols-1 lg:grid-cols-5 justify-items-center mt-14 pt-14 px-10 bg-primary-light">
+      <div class="hidden lg:block self-end">
+        <img src="../../../public/image/InTouch/intouch-1.png" alt="Amazing Company">
+      </div>
+      <div class="px-12 col-span-3 text-center">
+        <section-title title="Keep In Touch" description="Get your insurance services from our expert team"
+          cssURL="../../../dist/tailwind-output.css" class="col-span-2"></section-title>
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-items-center gap-4 text-left mt-10">
+          <div class="mb-6 self-stretch">
+            <label for="large-input" class="block mb-2 text-lg font-medium text-primary-text">Name:</label>
+            <input type="text" id="large-input"
+              class="block p-2 w-fit text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          </div>
+          <div class="mb-6">
+            <label for="large-input" class="block mb-2 text-lg font-medium text-primary-text">Phone:</label>
+            <input type="text" id="large-input"
+              class="block p-2 w-fit text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          </div>
+          <form class="max-w-sm">
+            <label for="countries" class="block mb-2 text-lg font-medium text-primary-text">Select an
+              insurance</label>
+            <select id="countries"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              <option selected>Choose an insurance</option>
+              <option value="LifeInsurance">Life Insurance</option>
+              <option value="HomeInsurance">Home Insurance</option>
+              <option value="TravelInsurance">Travel Insurance</option>
+              <option value="CarInsurance">Car Insurance</option>
+              <option value="BusinessInsurance">Business Insurance</option>
+              <option value="FireInsurance">Fire Insurance</option>
+            </select>
+          </form>
+          <button type="button"
+          class="self-center text-white bg-primary-default hover:bg-secondary-default focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-md px-6 py-2 block dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+          Order</button>
+        </div>
+      </div>
+      <div class="hidden lg:block self-end">
+        <img src="../../../public/image/InTouch/intouch-2.png" alt="Amazing Company">
+      </div>
+    </div>
+
+
 
   </div>
-  
-  
+
+
 
   <script src="../../../node_modules/swiper/swiper-bundle.min.js"></script>
-  <!-- <script type="module" src="../../Component/Main/NavBar/NavBar.js"></script> -->
-  <!-- <script type="module" src="../../Component/Main/SectionTitle/SectionTitle.js"></script> -->
 
   <script>
     var swiper = new Swiper(".mySwiper", {
