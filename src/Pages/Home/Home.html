@@ -137,8 +137,8 @@
             </select>
           </form>
           <button type="button"
-          class="self-center text-white bg-primary-default hover:bg-secondary-default focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-md px-6 py-2 block dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-          Order</button>
+            class="self-center text-white bg-primary-default hover:bg-secondary-default focus:ring-4 focus:ring-blue-300 font-medium rounded-md text-md px-6 py-2 block dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            Order</button>
         </div>
       </div>
       <div class="hidden lg:block self-end">
@@ -152,27 +152,49 @@
         <section-title title="Easy Process" description="Easy steps to get insurance services"
           cssURL="../../../dist/tailwind-output.css" class="col-span-2"></section-title>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
-        <div class="mt-20"><step-card title="Choose an insurance" description="Lorem ipsum dolor sit amet consectetur adipisicing." step="First Step" image="../../../public/image/Process/process-1.png" icon="../../../public/svg/Process/process-icon-1.svg" cssURL="../../../dist/tailwind-output.css"></step-card></div>
-        <step-card title="Meeting" description="Lorem ipsum dolor sit amet consectetur adipisicing." step="Second Step" image="../../../public/image/Process/process-2.png" icon="../../../public/svg/Process/process-icon-2.svg" cssURL="../../../dist/tailwind-output.css"></step-card>
-        <div class="mt-20"><step-card title="Get insurance" description="Lorem ipsum dolor sit amet consectetur adipisicing." step="Last Step" image="../../../public/image/Process/process-3.png" icon="../../../public/svg/Process/process-icon-3.svg" cssURL="../../../dist/tailwind-output.css"></step-card></div>
+      <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+        <div class="lg:mt-20"><step-card title="Choose an insurance"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing." step="First Step"
+            image="../../../public/image/Process/process-1.png" icon="../../../public/svg/Process/process-icon-1.svg"
+            cssURL="../../../dist/tailwind-output.css"></step-card></div>
+        <step-card title="Meeting" description="Lorem ipsum dolor sit amet consectetur adipisicing." step="Second Step"
+          image="../../../public/image/Process/process-2.png" icon="../../../public/svg/Process/process-icon-2.svg"
+          cssURL="../../../dist/tailwind-output.css"></step-card>
+        <div class="lg:mt-20"><step-card title="Get insurance"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing." step="Last Step"
+            image="../../../public/image/Process/process-3.png" icon="../../../public/svg/Process/process-icon-3.svg"
+            cssURL="../../../dist/tailwind-output.css"></step-card></div>
       </div>
+    </div>
+
+    <!-- Last Comments -->
+    <div class="grid grid-cols-1 lg:grid-cols-3">
+      <div class="swiper w-fit" rewind="true" navigation="true">
+        <div id="last-comments" class="swiper-slide lg:mt-32 px-10">
+          <comment-card
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt facilis in accusantium blanditiis sit eius ducimus eveniet"
+              name="LenaAnna" city="Kerman" image="../../../public/image/LastComment/person-1.png"
+              cssURL="../../../dist/tailwind-output.css"></comment-card>
+          </div>
+          <div id="last-comments" class="swiper-slide lg:mt-32 px-10">
+            <comment-card
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt facilis in accusantium blanditiis sit eius ducimus eveniet"
+            name="LenaAnna2" city="Kerman" image="../../../public/image/LastComment/person-2.png"
+            cssURL="../../../dist/tailwind-output.css"></comment-card>
+          </div>
+          <!-- <div class="swiper-wrapper">
+        </div> -->
+        <!-- <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+      <img src="../../../public/image/LastComment/last-comment-1.jpg" alt="Last Comments"
+        class="col-span-2 hidden lg:block justify-self-center">
     </div>
 
   </div>
 
-
-
-  <script src="../../../node_modules/swiper/swiper-bundle.min.js"></script>
-
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-      },
-    });
-  </script>
 </body>
 
 </html>
