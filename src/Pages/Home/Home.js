@@ -1,6 +1,6 @@
 "use strict"
 
-import { ServiceListData, AboutCompanyData, PopularServiceData, AmazingCompanyData } from '../../Utils/data.js';
+import { ServiceListData, AboutCompanyData, PopularServiceData, AmazingCompanyData, LatestArticleData } from '../../Utils/data.js';
 
 
 const loadServiceListData = () => {
@@ -91,6 +91,22 @@ const loadAmazingCompanyData = () => {
 }
 
 
+const loadArticleListData = () => {
+  const articleList = document.getElementById('article-list');
+  if (articleList) {
+    LatestArticleData.map(article => {
+      articleList.innerHTML +=
+        `
+          <div class="max-w-sm h-fit max-h-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 relative">
+            <card-image cardimage="${article.image}" cardurl="${article.href}" cssURL="./src/Component/CardImage/cardimage.css"></card-image>
+            <article-card author="${article.author}" date="${article.date}" title="${article.title}" summary="${article.summary}" cssURL="./dist/tailwind-output.css"></article-card>
+          </div>
+        `;
+    })
+  }
+}
+
+
 export {
-  loadServiceListData, loadAboutCompanyData, loadPopularServiceData, loadAmazingCompanyData
+  loadServiceListData, loadAboutCompanyData, loadPopularServiceData, loadAmazingCompanyData, loadArticleListData
 }

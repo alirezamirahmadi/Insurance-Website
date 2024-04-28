@@ -2,7 +2,7 @@
 
 
 import './Pages/Home/Home.js';
-import { loadServiceListData, loadAboutCompanyData, loadPopularServiceData, loadAmazingCompanyData } from './Pages/Home/Home.js';
+import { loadServiceListData, loadAboutCompanyData, loadPopularServiceData, loadAmazingCompanyData, loadArticleListData } from './Pages/Home/Home.js';
 
 $(function () {
   $('#navbar').load('./src/Component/NavBar/NavBar.html #component-navbar');
@@ -12,6 +12,7 @@ $(function () {
     loadAboutCompanyData();
     loadPopularServiceData();
     loadAmazingCompanyData();
+    loadArticleListData();
   });
 })
 

@@ -26,6 +26,13 @@ const AmazingCompanyData = [
   {id:3, header:'How much experience does our team member have?', body:'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit'},
 ]
 
+const LatestArticleData = [
+  {id:1, author:'AnnaLena', date:'20-02-2024', title:'Ensuring the interests of customers', image:'../../Public/image/Article/article-1.png', summary:'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit'},
+  {id:2, author:'AnnaLena', date:'20-02-2024', title:'Insurance covers the risk of non-fire', image:'../../Public/image/Article/article-2.png', summary:'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit'},
+  {id:3, author:'AnnaLena', date:'20-02-2024', title:'This company only insures marine risks', image:'../../Public/image/Article/article-3.png', summary:'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit'},
+]
+
+
 export {
-  ServiceListData, AboutCompanyData, PopularServiceData, AmazingCompanyData
+  ServiceListData, AboutCompanyData, PopularServiceData, AmazingCompanyData, LatestArticleData
 }
