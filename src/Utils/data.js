@@ -32,7 +32,24 @@ const LatestArticleData = [
   {id:3, author:'AnnaLena', date:'20-02-2024', title:'This company only insures marine risks', image:'../../Public/image/Article/article-3.png', summary:'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit'},
 ]
 
+const OtherServiceData = [
+  {id:1, title:'Account', href:'#'},
+  {id:2, title:'Articles', href:'#'},
+  {id:3, title:'Our team', href:'#'},
+  {id:4, title:'About us', href:'#'},
+]
 
+const GalleryData = [
+  {id:1, image:'../../Public/image/Article/article-1.png'},
+  {id:2, image:'../../Public/image/Article/article-2.png'},
+  {id:3, image:'../../Public/image/Article/article-3.png'},
+  {id:4, image:'../../Public/image/Service/service-1.jpg'},
+  {id:5, image:'../../Public/image/Service/service-3.jpg'},
+  {id:6, image:'../../Public/image/Service/service-2.jpg'},
+  {id:7, image:'../../Public/image/Article/article-1.png'},
+  {id:8, image:'../../Public/image/Article/article-2.png'},
+  {id:9, image:'../../Public/image/Article/article-3.png'},
+]
 export {
-  ServiceListData, AboutCompanyData, PopularServiceData, AmazingCompanyData, LatestArticleData
+  ServiceListData, AboutCompanyData, PopularServiceData, AmazingCompanyData, LatestArticleData, OtherServiceData, GalleryData
 }

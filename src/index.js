@@ -2,7 +2,9 @@
 
 
 import './Pages/Home/Home.js';
+import './Component/Footer/Footer.js'
 import { loadServiceListData, loadAboutCompanyData, loadPopularServiceData, loadAmazingCompanyData, loadArticleListData } from './Pages/Home/Home.js';
+import { loadFooter } from './Component/Footer/Footer.js';
 
 $(function () {
   $('#navbar').load('./src/Component/NavBar/NavBar.html #component-navbar');
@@ -13,6 +15,10 @@ $(function () {
     loadPopularServiceData();
     loadAmazingCompanyData();
     loadArticleListData();
+  });
+
+  $('#footer').load('./src/Component/Footer/Footer.html #component-footer', () => {
+    loadFooter();
   });
 })
 
