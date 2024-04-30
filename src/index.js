@@ -1,13 +1,16 @@
 "use strict"
 
-
+import './Component/MegaMenu/MegaMenu.js';
 import './Pages/Home/Home.js';
 import './Component/Footer/Footer.js'
+import { loadMegaMenu } from './Component/MegaMenu/MegaMenu.js';
 import { loadServiceListData, loadAboutCompanyData, loadPopularServiceData, loadAmazingCompanyData, loadArticleListData } from './Pages/Home/Home.js';
 import { loadFooter } from './Component/Footer/Footer.js';
 
 $(function () {
-  $('#navbar').load('./src/Component/NavBar/NavBar.html #component-navbar');
+  $('#navbar').load('./src/Component/NavBar/NavBar.html #component-navbar', () => {
+    loadMegaMenu();
+  });
 
   $('#home').load('./src/Pages/Home/Home.html #page-home', () => {
     loadServiceListData();
