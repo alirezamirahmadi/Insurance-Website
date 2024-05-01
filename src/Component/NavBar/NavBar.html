@@ -48,13 +48,28 @@
       </div>
 
       <div class="flex lg:hidden lg:my-4 me-4">
-        <button class="text-white left-0">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
-            stroke="currentColor" class="w-9 h-9">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
+        <button data-collapse-toggle="navbar-hamburger" type="button"
+          class="inline-flex items-center justify-center p-2 w-10 h-10 rounded-lg hover:bg-secondary-default focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-hamburger" aria-expanded="false">
+          <img src="../../../public/svg/Header/hamburger-menu.svg" alt="">
         </button>
       </div>
+    </div>
+    <div class="hidden w-full" id="navbar-hamburger">
+      <ul class="flex flex-col font-medium mt-4 rounded-lg shadow-lg bg-white">
+        <li>
+          <a href="#" class="block py-2 px-3 text-primary-default bg-white">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-primary-default bg-white rounded">Services</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-primary-default bg-white rounded">Articles</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-primary-default bg-white rounded">About us</a>
+        </li>
+      </ul>
     </div>
 
   </nav>
