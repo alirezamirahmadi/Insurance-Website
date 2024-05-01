@@ -23,6 +23,8 @@ $(function () {
   $('#footer').load('./src/Component/Footer/Footer.html #component-footer', () => {
     loadFooter();
   });
+
+  $('#bottom-navigation').load('./src/Component/BottomNavigation/BottomNavigation.html #component-bottom-navigation');
 })
 
 // $('service-list').parent();
