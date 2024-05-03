@@ -19,7 +19,7 @@
         Choose an agent</button>
       <div class="grid grid-cols-3">
         <img class="bg-secondary-default w-14 h-14 p-2 rounded-full row-span-2 col-span-1"
-          src="../../../public/svg/Footer/headset-icon.svg" alt="">
+          src="../../../public/svg/Footer/headset-icon.svg" alt="" loading="lazy">
         <p class="text-xl text-white col-span-2">You need help?</p>
         <p class="text-xl text-white col-span-2">034-99887766</p>
       </div>
@@ -28,17 +28,19 @@
     <!-- Links -->
     <div class="container mx-auto grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-4 mt-12">
       <div class="col-span-2">
-        <img class="w-44 rounded-xl" src="../../../public/image/Header/brand.png" alt="">
+        <img class="w-44 rounded-xl" src="../../../public/image/Header/brand.png" alt="" loading="lazy">
         <p class="text-xl text-white line-clamp-3 mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
           ea adipisci distinctio accusamus eligendi porro, voluptate itaque a dicta iure consectetur ut</p>
         <form class="mt-8">
           <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
           <div class="relative">
             <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
-                <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
-                <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
-            </svg>
+              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                <path
+                  d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+              </svg>
             </div>
             <input type="email" id="email"
               class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -47,6 +49,9 @@
               class="text-white absolute end-2.5 bottom-2.5 bg-primary-default hover:bg-secondary-default focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Membership</button>
           </div>
         </form>
+        <div class="mt-4">
+          <social-network cssURL="../../../dist/tailwind-output.css"></social-network>
+        </div>
       </div>
 
       <div id="footer-services">
@@ -56,7 +61,7 @@
         <p class="text-3xl text-white">Other Services</p>
         <ul id="footer-other-services"></ul>
       </div>
-      
+
       <div class="col-span-2">
         <p class="text-3xl text-white">Gallery</p>
         <div id="footer-gallery" class="grid grid-cols-3 gap-4 w-80 mt-8">

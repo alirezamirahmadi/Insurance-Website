@@ -36,7 +36,7 @@ const loadMegaMenuAboutUs = () => {
       element +=
         `<ul class="pe-10 ps-2 pb-4">
           <li class="mb-3 mt-2 text-xl text-secondary-default flex items-center">
-            <img src="${service.image}" class="w-16 bg-secondary-default p-2 rounded-full me-4"/>
+            <img src="${service.image}" class="w-16 bg-secondary-default p-2 rounded-full me-4" loading="lazy"/>
             <p>${service.title}</p>
           </li>
           <li class="ps-2 mt-2 mb-1 text-lg text-primary-text">

@@ -20,7 +20,7 @@ template.innerHTML =
   `
   <link rel="stylesheet">
     <div class="box">
-      <img id="cardimage" src="">
+      <img id="cardimage" src="" loading="lazy">
         <div class="box-content">
           <ul class="icon">
             <li><a id="cardurl" href=""><i class=""></i></a></li>

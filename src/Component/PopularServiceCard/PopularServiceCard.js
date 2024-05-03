@@ -22,7 +22,7 @@ template.innerHTML =
   <link rel="stylesheet">
   <div class="flex gap-4 p-8 group/item bg-secondary-default rounded-3xl max-w-sm h-fit max-h-fit hover:shadow-xl">
     <div>
-      <img id="popularcardimage" class="w-28 p-3 bg-secondary-light rounded-full"/>
+      <img id="popularcardimage" class="w-28 p-3 bg-secondary-light rounded-full" loading="lazy"/>
     </div>
     <div>
       <a href="#">

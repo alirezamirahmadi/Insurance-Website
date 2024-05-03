@@ -24,7 +24,7 @@ template.innerHTML =
   <link rel="stylesheet">
   <div class="p-5 text-center w-96 mx-auto">
     <div class="mb-10 relative">
-      <img id="stepcardimage" class="mx-auto -rotate-12"/>
+      <img id="stepcardimage" class="mx-auto -rotate-12" loading="lazy"/>
       <div class="w-20 h-20 rounded-full shadow-md absolute top-36 right-28 bg-white"><img id="stepcardicon" class="block w-14 h-14 mx-auto mt-3"/></div>
       <div id="stepcardstep" class="text-md text-white bg-primary-default rounded-md p-3 absolute top-6 right-4 rotate-6"></div>
     </div>

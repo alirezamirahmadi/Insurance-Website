@@ -8,6 +8,7 @@ import { loadServiceListData, loadAboutCompanyData, loadPopularServiceData, load
 import { loadFooter } from './Component/Footer/Footer.js';
 
 $(function () {
+
   $('#navbar').load('./src/Component/NavBar/NavBar.html #component-navbar', () => {
     loadMegaMenu();
   });
@@ -25,8 +26,7 @@ $(function () {
   });
 
   $('#bottom-navigation').load('./src/Component/BottomNavigation/BottomNavigation.html #component-bottom-navigation');
+
 })
 
-// $('service-list').parent();
-// console.log('main', document.getElementById('body'));
-// console.log('main', $('service-list').parent());
+

@@ -2,6 +2,13 @@
 
 import { ServiceListData, OtherServiceData, GalleryData } from "../../Utils/data.js";
 
+const loadSocialNetwork = () => {
+  $('social-network').load('./src/Component/SocialNetwork/SocialNetwork.html #social-icon');
+  $(function () {
+    console.log(1);
+  })
+}
+
 const loadServiceData = () => {
   const serviceList = document.getElementById('footer-services');
   if (serviceList) {
@@ -43,7 +50,7 @@ const loadGalleryData = () => {
       gallery.innerHTML +=
         `
         <a href="#">
-          <img src="${image.image}" class="w-24 h-24 rounded-lg" />
+          <img src="${image.image}" class="w-24 h-24 rounded-lg" loading="lazy"/>
         </a>
         `;
     })
@@ -56,6 +63,7 @@ const loadFooter = () => {
   loadServiceData();
   loadOtherServiceData();
   loadGalleryData();
+  loadSocialNetwork();
 }
 
 export {
