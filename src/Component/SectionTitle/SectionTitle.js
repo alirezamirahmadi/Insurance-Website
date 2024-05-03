@@ -20,8 +20,8 @@ template.innerHTML =
   `
   <link rel="stylesheet">
   <div class="my-6">
-    <p id="title" class="text-primary-default text-4xl font-medium ms-6"></p>
-    <p id="description" class="text-secondary-default text-6xl font-medium ms-2"></p>
+    <p id="title" class="text-primary-default text-4xl ms-6"></p>
+    <p id="description" class="text-secondary-default text-6xl  font-serif  font-bold ms-2"></p>
   </div>
   `;
 

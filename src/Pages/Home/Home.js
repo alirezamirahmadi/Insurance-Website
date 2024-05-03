@@ -19,7 +19,7 @@ const loadServiceListData = () => {
 }
 
 const loadAboutCompanyData = () => {
-  const aboutCompany = document.getElementById('aboutcompanytabs');
+  const aboutCompany = document.getElementById('about-company-tabs');
   if (aboutCompany) {
     AboutCompanyData.map(about => {
       aboutCompany.innerHTML +=

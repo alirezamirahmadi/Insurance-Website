@@ -1,0 +1,33 @@
+@keyframes title-home {
+  from {
+    top: -150px;
+  }
+
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes illustration-home {
+  from {
+    right: -100px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+.animate__title-home {
+  position: relative;
+  animation-name: title-home;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.animate__illustration-home {
+  position: relative;
+  animation-name: illustration-home;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}

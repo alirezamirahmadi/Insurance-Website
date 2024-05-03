@@ -15,7 +15,7 @@ class AboutCompany extends HTMLElement {
     items.map(item => {
       domItems += `
       <div class="flex mt-4">
-        <img src="../../../public/svg/person.svg" class="w-8"/>
+        <img src="../../../public/svg/Home/person.svg" class="w-8"/>
         <span class="text-xl text-secondary-default">${item}</span>
       </div>
 `

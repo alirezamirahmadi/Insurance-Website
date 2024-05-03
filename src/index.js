@@ -2,12 +2,14 @@
 
 import './Component/MegaMenu/MegaMenu.js';
 import './Pages/Home/Home.js';
-import './Component/Footer/Footer.js'
+import './Component/Footer/Footer.js';
 import { loadMegaMenu } from './Component/MegaMenu/MegaMenu.js';
 import { loadServiceListData, loadAboutCompanyData, loadPopularServiceData, loadAmazingCompanyData, loadArticleListData } from './Pages/Home/Home.js';
 import { loadFooter } from './Component/Footer/Footer.js';
 
 $(function () {
+
+  $('#topbar').load('./src/Component/TopBar/TopBar.html #component-topbar');
 
   $('#navbar').load('./src/Component/NavBar/NavBar.html #component-navbar', () => {
     loadMegaMenu();
