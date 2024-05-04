@@ -3,6 +3,11 @@ const ServiceListData = [
   { id: 1, title: 'Life Insurance', image: '../../Public/image/Service/service-1.jpg', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit', href: '#' },
   { id: 2, title: 'Home Insurance', image: '../../Public/image/Service/service-3.jpg', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit', href: '#' },
   { id: 3, title: 'Travel Insurance', image: '../../Public/image/Service/service-2.jpg', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit', href: '#' },
+  { id: 4, title: 'Life Insurance', image: '../../Public/image/Service/service-1.jpg', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit', href: '#' },
+  { id: 5, title: 'Home Insurance', image: '../../Public/image/Service/service-3.jpg', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit', href: '#' },
+  { id: 6, title: 'Travel Insurance', image: '../../Public/image/Service/service-2.jpg', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit', href: '#' },
+  { id: 7, title: 'Life Insurance', image: '../../Public/image/Service/service-1.jpg', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit', href: '#' },
+  { id: 8, title: 'Home Insurance', image: '../../Public/image/Service/service-3.jpg', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit', href: '#' }
 ]
 
 const AboutCompanyData = [

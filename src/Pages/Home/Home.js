@@ -2,11 +2,17 @@
 
 import { ServiceListData, AboutCompanyData, PopularServiceData, AmazingCompanyData, LatestArticleData } from '../../Utils/data.js';
 
+const loadEvents = () => {
+  let btnListServices = document.getElementById('btnListServices');
+  btnListServices?.addEventListener('click', () => {
+    location.assign('?page=services');
+  })
+}
 
 const loadServiceListData = () => {
   const serviceList = document.getElementById('service-list');
   if (serviceList) {
-    ServiceListData.map(service => {
+    ServiceListData.splice(0, 3).map(service => {
       serviceList.innerHTML +=
         `
           <div class="max-w-sm h-fit max-h-fit bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -106,7 +112,16 @@ const loadArticleListData = () => {
   }
 }
 
+const loadHome = () => {
+  loadServiceListData();
+  loadAboutCompanyData();
+  loadPopularServiceData();
+  loadAmazingCompanyData();
+  loadArticleListData();
+  
+  loadEvents();
+}
 
 export {
-  loadServiceListData, loadAboutCompanyData, loadPopularServiceData, loadAmazingCompanyData, loadArticleListData
+  loadHome
 }
