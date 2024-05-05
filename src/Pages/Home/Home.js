@@ -67,33 +67,6 @@ const loadAmazingCompanyData = () => {
       active = false;
     })
   }
-
-  // options with default values
-  const options = {
-    alwaysOpen: true,
-    activeClasses: 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white',
-    inactiveClasses: 'text-gray-500 dark:text-gray-400',
-    onOpen: (item) => {
-      console.log('accordion item has been shown');
-      console.log(item);
-    },
-    onClose: (item) => {
-      console.log('accordion item has been hidden');
-      console.log(item);
-    },
-    onToggle: (item) => {
-      console.log('accordion item has been toggled');
-      console.log(item);
-    },
-  };
-
-  // instance options object
-  const instanceOptions = {
-    id: 'amazing-company',
-    override: true
-  };
-
-  // const accordion = new Accordion(amazingCompany, accordionItems, options, instanceOptions);
 }
 
 
@@ -118,7 +91,7 @@ const loadHome = () => {
   loadPopularServiceData();
   loadAmazingCompanyData();
   loadArticleListData();
-  
+
   loadEvents();
 }
 

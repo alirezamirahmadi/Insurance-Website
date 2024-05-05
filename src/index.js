@@ -3,11 +3,13 @@
 import './Component/MegaMenu/MegaMenu.js';
 import './Pages/Home/Home.js';
 import './Component/Footer/Footer.js';
-import './Pages/Services/Services.js'
+import './Pages/Services/Services.js';
+import './Pages/Articles/Articles.js';
 import { loadMegaMenu } from './Component/MegaMenu/MegaMenu.js';
 import { loadHome } from './Pages/Home/Home.js';
 import { loadFooter } from './Component/Footer/Footer.js';
 import { loadServices } from './Pages/Services/Services.js';
+import { loadArtcles } from './Pages/Articles/Articles.js';
 
 let page = new URL(location.href).searchParams.get('page')
 
@@ -25,6 +27,9 @@ $(function () {
       break;
     case 'services':
       $('#main').load('./src/Pages/Services/Services.html #page-services', () => { loadServices(); });
+      break;
+    case 'articles':
+      $('#main').load('./src/Pages/Articles/Articles.html #page-articles', () => { loadArtcles(); });
       break;
     default:
       $('#main').load('./src/Pages/Home/Home.html #page-home', () => { loadHome(); });
